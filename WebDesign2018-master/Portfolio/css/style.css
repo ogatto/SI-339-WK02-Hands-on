@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px; /* stretch the width to 100% until 800px */
+    margin: 0 auto; /* this will only work for a fixed-width div*/
+}
+
+.header {
+    background: #333;
+}
+.header h1 {
+    color: #eee;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 100px;
+}
+
+/* Bring the logo and nav section side-by-side */
+.nav, .logo {
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav{
+    float:right;
+}
+
+
+nav ul { /* all the menus that are inside nav */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul { /* only the direct child menus of the nav, this doesn't target sub-menus */
+    height: 40px;
+    text-align: right;
+}
+
+nav > ul > li { /* only the direct li's  */
+    width: 90px;
+    display: inline-block;
+    vertical-align: top; /* for inline-block */
+    text-align: center;
+}
+
+nav ul li:hover ul { /* Hover on li to reveal the child of li which is ul i.e. the sub-menu */
+    display: block;
+    width: 180px;
+}
+
+nav ul li ul { /* sub-menu style */
+    display: none;
+    background: #333;
+}
+
+nav ul li a { /* all the anchor tags */
+    color: #ccc;
+    padding: 10px; /* so we can have enough clickable space */
+    line-height: 40px;
+    text-decoration: none;
+    height: 100px;
+    line-height: 100px;
+}
+
+nav ul li a:hover {
+    color: #00adb5;
+}
+
+nav ul li ul li { /* all the sub-menu li's */
+    text-align: left;
+}
+
+nav ul li ul li a { /* all the sub-menu anchor tags */
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section, .one_page {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-bottom: 10px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: grey;
+    height: 25vh;
+}
+
+#name_header {
+    background:url(../img/mich.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#image_overlay {
+    position:absolute;
+    height:100%;
+    width:100%;top:0;right:0;bottom:0;left:0;background:rgba(200,200,200,0.8);z-index:1
+}*/
+
+#lead-content h2 {
+position:absolute;
+z-index:10;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+text-align:center
+}
+
+#about{
+    background-color: LightSkyGrey  ;
+    background-height: 100%;
+}   
+
+/*h3 {
+position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center
+}*/
+
+
+
+
+
+/*@media only screen and (max-width: 620px){
+    nav > ul {
+        display: block;
+        float: none;
+    }
+    nav ul li { 
+        float: none;
+        border-top: 1px solid black;
+    }
+}*/
