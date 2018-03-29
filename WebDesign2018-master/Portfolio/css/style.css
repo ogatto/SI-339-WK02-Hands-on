@@ -8,6 +8,10 @@ body {
     font-family: sans-serif;
 }
 
+h2{
+    font-size:4em;
+}
+
 .container {
     max-width: 800px; /* stretch the width to 100% until 800px */
     margin: 0 auto; /* this will only work for a fixed-width div*/
