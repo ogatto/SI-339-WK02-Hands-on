@@ -1,7 +1,7 @@
 @media only screen and (min-width: 650px){
 
 .top-nav ul li {
-    display: inline-block;
+    display: inline-block;
 }
 
 
@@ -9,11 +9,15 @@ body {
     background-color: white;
 }
 
-.top-nav ul{
-    margin-left: 24%;
-    display: flex;
-    justify-content: center;
+.top-nav ul li {
+    display: inline-block;
+    border-top: 1px solid red;
 }
+
+.top-nav ul{
+    text-align: center;
+}
+
 
 .photo-grid {
     display: grid;
@@ -60,14 +64,22 @@ body {
 
 @media only screen and (min-width: 1000px){
 
-.top-nav ul {
-    display: flex;
-    justify-content: flex-end;  
-}
-
 body {
     background-color: #ECECEA;
 }
+
+.logo{
+    float:left;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.top-nav ul li {
+    border-top: 1px solid black;
+}    
 
 .photo-grid {
     display: grid;
@@ -110,4 +122,3 @@ body {
     grid-row: 3;
     grid-column: 3/5;
 }
-
