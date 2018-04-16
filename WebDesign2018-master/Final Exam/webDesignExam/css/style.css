@@ -1,0 +1,35 @@
+header{
+	font-size:24px;
+}
+
+body{
+	background-image: url(../images/honey_im_subtle.png);
+	background-size: cover;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	flex: 1;
+	border: 5px solid blue;
+	max-width:50%;
+	box-sizing: border-box;
+	padding:5%;
+}
+
+img{
+	display:block;
+	margin: 0 auto;
+	width:100%;
+	
+}
+
+button{
+	display:inline-block;
+	margin:5px;
+}
